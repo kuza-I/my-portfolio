@@ -8,8 +8,8 @@ const addButtonFamily = document.getElementById("family_button");
 const addButtonFirst = document.getElementById("first_button");
 
 const makeButton = document.getElementById("make_name");
-const FamilyContainer = document.getElementById("memo-family-container");
-const FirstContainer = document.getElementById("memo-first-container");
+const FamilyContainer = document.getElementById("memo_family_container");
+const FirstContainer = document.getElementById("memo_first_container");
 
 let memosFamily = [];
 let memosFirst = [];
