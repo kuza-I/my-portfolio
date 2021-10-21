@@ -1,0 +1,59 @@
+.nametitle {
+  margin: 3rem;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightcyan;
+  color: green;
+  font-size: 32px;
+}
+
+.split {
+  display: table;
+  width: 100%;
+  font-size: 24px;
+}
+
+.split_item {
+  display: table-cell;
+  padding: 5rem;
+  width: 33%;
+}
+
+.split_left {
+  background-color: lightgray;
+}
+.split_center {
+  background-color: whitesmoke;
+}
+
+.split_right {
+  background-color: lightblue;
+}
+
+.under {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+.family_taker {
+  background-color: lightskyblue;
+  padding: 1rem;
+}
+
+.first_taker {
+  background-color: lightcoral;
+  padding: 1rem;
+}
+
+.maker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}

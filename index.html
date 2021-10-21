@@ -9,7 +9,55 @@
     <title>My Portfolio</title>
   </head>
   <body>
-    <h1>ポートフォリオサイト</h1>
+    <div class="nametitle">
+      <h1>岩佐 和磨</h1>
+    </div>
+
+    <div class="split">
+      <div class="split_item split_left">
+        <div class="split_leftin">
+          <h3>出身地</h3>
+          <h4>北海道・苫小牧市</h4>
+        </div>
+      </div>
+      <div class="split_item split_center">
+        <div class="split_centerin">
+          <h3>ステータス</h3>
+          <h4>北海道大学情報科学院修士1年</h4>
+          <h4>22歳</h4>
+        </div>
+      </div>
+      <div class="split_item split_right">
+        <div class="split_rightin">
+          <h3>好きなこと</h3>
+          <h4>ゲーム</h4>
+          <h5>・Valorant</h5>
+          <h5>・ボードゲーム</h5>
+          <h5>・TRPG</h5>
+          <h4>謎解き</h4>
+          <h4>クイズ</h4>
+          <h5></h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="under">
+      <h2>それっぽい名前メーカー</h2>
+      <div class="family_taker">
+        <input type="text" id="memo_family" value="ゴリラ" />
+        <button id="family_button">苗字保存</button>
+      </div>
+      <div class="first_taker">
+        <input type="text" id="memo_first" value="ラムネード" />
+        <button id="first_button">名前保存</button>
+      </div>
+    </div>
+    <div class="maker">
+      <button id="make_name">名前生成！</button>
+      <div id="memo-family-container" class="name"></div>
+      <div id="memo-first-container" class="name"></div>
+    </div>
+
     <script src="main.js"></script>
   </body>
 </html>
