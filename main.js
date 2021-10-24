@@ -10,8 +10,6 @@ const addButtonFirst = document.getElementById("first_button");
 const makeButton = document.getElementById("make_name");
 const FamilyContainer = document.getElementById("memo_family_container");
 const FirstContainer = document.getElementById("memo_first_container");
-const FamilyContainer2 = document.getElementById("memo_family_container2");
-const FirstContainer2 = document.getElementById("memo_first_container2");
 
 let memosFamily = [];
 let memosFirst = [];
