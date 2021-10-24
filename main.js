@@ -28,7 +28,6 @@ addButtonFamily.onclick = function () {
       const text = memoInputFamily.value;
       memosFamily.push(text);
       memoInputFamily.value = "";
-      memosToContainer(FamilyContainer2, memosFamily);
       console.log(memosFamily);
     }
   }
@@ -46,6 +45,7 @@ addButtonFirst.onclick = function () {
       const text = memoInputFirst.value;
       memosFirst.push(text);
       memoInputFirst.value = "";
+      console.log(memosFirst);
     }
   }
 };
