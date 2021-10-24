@@ -10,27 +10,51 @@ const addButtonFirst = document.getElementById("first_button");
 const makeButton = document.getElementById("make_name");
 const FamilyContainer = document.getElementById("memo_family_container");
 const FirstContainer = document.getElementById("memo_first_container");
+const FamilyContainer2 = document.getElementById("memo_family_container2");
+const FirstContainer2 = document.getElementById("memo_first_container2");
 
 let memosFamily = [];
 let memosFirst = [];
 
 addButtonFamily.onclick = function () {
-  const text = memoInputFamily.value;
-  memosFamily.push(text);
-  memoInputFamily.textContent = "";
+  if (memoInputFamily.value !== "") {
+    let notSame = true;
+    for (let i = 0; i < memosFamily.length; i++) {
+      if (memoInputFamily.value === memosFamily[i]) {
+        notSame = false;
+      }
+    }
+    if (notSame) {
+      const text = memoInputFamily.value;
+      memosFamily.push(text);
+      memoInputFamily.value = "";
+      memosToContainer(FamilyContainer2, memosFamily);
+      console.log(memosFamily);
+    }
+  }
 };
 
 addButtonFirst.onclick = function () {
-  const text = memoInputFirst.value;
-  memosFirst.push(text);
-  memoInputFirst.textContent = "";
+  if (memoInputFirst.value !== "") {
+    let notSame = true;
+    for (let i = 0; i < memosFirst.length; i++) {
+      if (memoInputFirst.value === memosFirst[i]) {
+        notSame = false;
+      }
+    }
+    if (notSame) {
+      const text = memoInputFirst.value;
+      memosFirst.push(text);
+      memoInputFirst.value = "";
+    }
+  }
 };
 
-const memosToCountainer = function () {
+makeButton.onclick = function () {
   FamilyContainer.textContent = "";
   FirstContainer.textContent = "";
-  if (!memosFamily.length) {
-    if (!memosFirst.length) {
+  if (memosFamily.length !== 0) {
+    if (memosFirst.length !== 0) {
       const randFamily = Math.floor(Math.random() * memosFamily.length);
       const randFirst = Math.floor(Math.random() * memosFirst.length);
       const choiseFamily = document.createElement("div");
