@@ -11,8 +11,8 @@ const makeButton = document.getElementById("make_name");
 const FamilyContainer = document.getElementById("memo_family_container");
 const FirstContainer = document.getElementById("memo_first_container");
 
-let memosFamily = [];
-let memosFirst = [];
+let memosFamily = ["田中", "吉田", "藤原", "佐藤", "木村", "小笠原", "山田"];
+let memosFirst = ["勇気", "恵美", "健人", "瞳", "敦", "花子", "太郎"];
 
 addButtonFamily.onclick = function () {
   if (memoInputFamily.value !== "") {
